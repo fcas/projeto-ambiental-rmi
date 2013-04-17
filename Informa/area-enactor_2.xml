@@ -207,7 +207,7 @@
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"temperatureMonitor;"+temperature</Outcome>
-		<ServiceInput service="InformaService" function="temperatureMonitor">
+		<ServiceInput service="informaService" function="temperatureMonitor">
 			<Attribute name="area" />
 		</ServiceInput>
 	</Reference>
@@ -222,7 +222,7 @@
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"beautifulWeatherMonitor;"+"BEAUTIFUL_ON"</Outcome>
-		<ServiceInput service="InformaService" function="beautifulWeatherMonitor">
+		<ServiceInput service="informaService" function="beautifulWeatherMonitor">
 			<Attribute name="area" />
 		</ServiceInput>
 	</Reference>
@@ -234,7 +234,7 @@
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"beautifulWeatherMonitor;"+"BEAUTIFUL_OFF"</Outcome>
-		<ServiceInput service="InformaService" function="beautifulWeatherMonitor">
+		<ServiceInput service="informaService" function="beautifulWeatherMonitor">
 			<Attribute name="area" />
 		</ServiceInput>
 	</Reference>
@@ -246,7 +246,7 @@
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"isFireMonitor;"+"FIRE_ON"</Outcome>
-		<ServiceInput service="InformaService" function="isFireMonitor">
+		<ServiceInput service="informaService" function="isFireMonitor">
 			<Attribute name="area" />
 		</ServiceInput>
 	</Reference>
@@ -258,7 +258,7 @@
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"isFireMonitor;"+"FIRE_OFF"</Outcome>
-		<ServiceInput service="InformaService" function="isFireMonitor">
+		<ServiceInput service="informaService" function="isFireMonitor">
 			<Attribute name="area" />
 		</ServiceInput>
 	</Reference>
@@ -271,7 +271,7 @@
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"hotDryMonitor;"+"HOTDRY_ON"</Outcome>
-		<ServiceInput service="InformaService" function="hotDryMonitor">
+		<ServiceInput service="informaService" function="hotDryMonitor">
 			<Attribute name="area"/>
 		</ServiceInput>
 	</Reference>
@@ -283,7 +283,7 @@
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"hotDryMonitor;"+"HOTDRY_OFF"</Outcome>
-		<ServiceInput service="InformaService" function="hotDryMonitor">
+		<ServiceInput service="informaService" function="hotDryMonitor">
 			<Attribute name="area"/>
 		</ServiceInput>
 	</Reference>

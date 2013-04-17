@@ -69,22 +69,6 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         LabelSolA2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         Balao2 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
-        LabeAgeA4 = new javax.swing.JLabel();
-        LabeTempA4 = new javax.swing.JLabel();
-        LabelLixoA4 = new javax.swing.JLabel();
-        LabeChuvaA4 = new javax.swing.JLabel();
-        LabeSomA4 = new javax.swing.JLabel();
-        LabeFogoA4 = new javax.swing.JLabel();
-        LabeAciA4 = new javax.swing.JLabel();
-        LabePolA4 = new javax.swing.JLabel();
-        LabelCarroA4 = new javax.swing.JLabel();
-        LabelSecQueA4 = new javax.swing.JLabel();
-        LabelNuvMovA4 = new javax.swing.JLabel();
-        LabelSolA4 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        Balao4 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         LabelLixoA3 = new javax.swing.JLabel();
@@ -101,6 +85,22 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         LabelSolA3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         Balao3 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        LabeAgeA4 = new javax.swing.JLabel();
+        LabeTempA4 = new javax.swing.JLabel();
+        LabelLixoA4 = new javax.swing.JLabel();
+        LabeChuvaA4 = new javax.swing.JLabel();
+        LabeSomA4 = new javax.swing.JLabel();
+        LabeFogoA4 = new javax.swing.JLabel();
+        LabeAciA4 = new javax.swing.JLabel();
+        LabePolA4 = new javax.swing.JLabel();
+        LabelCarroA4 = new javax.swing.JLabel();
+        LabelSecQueA4 = new javax.swing.JLabel();
+        LabelNuvMovA4 = new javax.swing.JLabel();
+        LabelSolA4 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        Balao4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel47 = new javax.swing.JLabel();
@@ -258,7 +258,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         LabelSolA2.setBounds(260, 80, 32, 50);
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel5.setText(" 3");
+        jLabel5.setText(" 2");
         jPanel8.add(jLabel5);
         jLabel5.setBounds(30, 150, 30, 20);
 
@@ -271,75 +271,6 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         jPanel1.add(jPanel3);
         jPanel3.setBounds(450, 80, 360, 270);
-
-        jPanel6.setOpaque(false);
-        jPanel6.setLayout(null);
-
-        jPanel10.setOpaque(false);
-        jPanel10.setLayout(null);
-
-        LabeAgeA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/CaminhaoDesativado.png"))); // NOI18N
-        jPanel10.add(LabeAgeA4);
-        LabeAgeA4.setBounds(90, 180, 32, 32);
-
-        LabeTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/temp3.png"))); // NOI18N
-        jPanel10.add(LabeTempA4);
-        LabeTempA4.setBounds(30, 180, 32, 32);
-
-        LabelLixoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/LixoVazia.png"))); // NOI18N
-        jPanel10.add(LabelLixoA4);
-        LabelLixoA4.setBounds(30, 140, 32, 32);
-
-        LabeChuvaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemSemChuva.png"))); // NOI18N
-        jPanel10.add(LabeChuvaA4);
-        LabeChuvaA4.setBounds(70, 140, 32, 32);
-
-        LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemBuzina.png"))); // NOI18N
-        jPanel10.add(LabeSomA4);
-        LabeSomA4.setBounds(110, 140, 32, 32);
-
-        LabeFogoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemFogo.png"))); // NOI18N
-        jPanel10.add(LabeFogoA4);
-        LabeFogoA4.setBounds(170, 140, 32, 32);
-
-        LabeAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemSemAcida.png"))); // NOI18N
-        jPanel10.add(LabeAciA4);
-        LabeAciA4.setBounds(210, 140, 32, 32);
-
-        LabePolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemVerdeEstado1.png"))); // NOI18N
-        jPanel10.add(LabePolA4);
-        LabePolA4.setBounds(250, 140, 32, 32);
-
-        LabelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/carroSem.png"))); // NOI18N
-        jPanel10.add(LabelCarroA4);
-        LabelCarroA4.setBounds(130, 180, 30, 30);
-
-        LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/eyes-on-fire-icon-sem.png"))); // NOI18N
-        jPanel10.add(LabelSecQueA4);
-        LabelSecQueA4.setBounds(170, 180, 30, 30);
-
-        LabelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/no-wind-cloud.png"))); // NOI18N
-        jPanel10.add(LabelNuvMovA4);
-        LabelNuvMovA4.setBounds(250, 180, 40, 30);
-
-        LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/Semsol.png"))); // NOI18N
-        jPanel10.add(LabelSolA4);
-        LabelSolA4.setBounds(210, 170, 32, 50);
-
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel4.setText("  2");
-        jPanel10.add(jLabel4);
-        jLabel4.setBounds(310, 80, 40, 30);
-
-        Balao4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/balao_esq_inf (3).png"))); // NOI18N
-        jPanel10.add(Balao4);
-        Balao4.setBounds(10, 60, 350, 170);
-
-        jPanel6.add(jPanel10);
-        jPanel10.setBounds(-10, 30, 460, 270);
-
-        jPanel1.add(jPanel6);
-        jPanel6.setBounds(10, 270, 470, 260);
 
         jPanel4.setOpaque(false);
         jPanel4.setLayout(null);
@@ -396,9 +327,9 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         LabelSolA3.setBounds(250, 180, 32, 50);
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel7.setText(" 4");
+        jLabel7.setText(" 3");
         jPanel9.add(jLabel7);
-        jLabel7.setBounds(20, 90, 30, 30);
+        jLabel7.setBounds(20, 90, 20, 30);
 
         Balao3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/balao_dir_inf (3).png"))); // NOI18N
         jPanel9.add(Balao3);
@@ -409,6 +340,75 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         jPanel1.add(jPanel4);
         jPanel4.setBounds(310, 330, 480, 250);
+
+        jPanel6.setOpaque(false);
+        jPanel6.setLayout(null);
+
+        jPanel10.setOpaque(false);
+        jPanel10.setLayout(null);
+
+        LabeAgeA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/CaminhaoDesativado.png"))); // NOI18N
+        jPanel10.add(LabeAgeA4);
+        LabeAgeA4.setBounds(90, 180, 32, 32);
+
+        LabeTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/temp3.png"))); // NOI18N
+        jPanel10.add(LabeTempA4);
+        LabeTempA4.setBounds(30, 180, 32, 32);
+
+        LabelLixoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/LixoVazia.png"))); // NOI18N
+        jPanel10.add(LabelLixoA4);
+        LabelLixoA4.setBounds(30, 140, 32, 32);
+
+        LabeChuvaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemSemChuva.png"))); // NOI18N
+        jPanel10.add(LabeChuvaA4);
+        LabeChuvaA4.setBounds(70, 140, 32, 32);
+
+        LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemBuzina.png"))); // NOI18N
+        jPanel10.add(LabeSomA4);
+        LabeSomA4.setBounds(110, 140, 32, 32);
+
+        LabeFogoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemFogo.png"))); // NOI18N
+        jPanel10.add(LabeFogoA4);
+        LabeFogoA4.setBounds(170, 140, 32, 32);
+
+        LabeAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemSemAcida.png"))); // NOI18N
+        jPanel10.add(LabeAciA4);
+        LabeAciA4.setBounds(210, 140, 32, 32);
+
+        LabePolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemVerdeEstado1.png"))); // NOI18N
+        jPanel10.add(LabePolA4);
+        LabePolA4.setBounds(250, 140, 32, 32);
+
+        LabelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/carroSem.png"))); // NOI18N
+        jPanel10.add(LabelCarroA4);
+        LabelCarroA4.setBounds(130, 180, 30, 30);
+
+        LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/eyes-on-fire-icon-sem.png"))); // NOI18N
+        jPanel10.add(LabelSecQueA4);
+        LabelSecQueA4.setBounds(170, 180, 30, 30);
+
+        LabelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/no-wind-cloud.png"))); // NOI18N
+        jPanel10.add(LabelNuvMovA4);
+        LabelNuvMovA4.setBounds(250, 180, 40, 30);
+
+        LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/Semsol.png"))); // NOI18N
+        jPanel10.add(LabelSolA4);
+        LabelSolA4.setBounds(210, 170, 32, 50);
+
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel4.setText("4");
+        jPanel10.add(jLabel4);
+        jLabel4.setBounds(320, 80, 20, 30);
+
+        Balao4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/balao_esq_inf (3).png"))); // NOI18N
+        jPanel10.add(Balao4);
+        Balao4.setBounds(10, 60, 350, 170);
+
+        jPanel6.add(jPanel10);
+        jPanel10.setBounds(-10, 30, 460, 270);
+
+        jPanel1.add(jPanel6);
+        jPanel6.setBounds(10, 270, 470, 260);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/mapa_final_final.png"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -1101,7 +1101,6 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 LabelLixoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoVazia.png")));
                 //seta icone vazia
             } else if (content.equals("ENCHENDO")) {
-                System.out.println("ENCHENDO");
                 LabelLixoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendo.png")));
                 //seta icone enchendo
             } else if (content.equals("CHEIA")) {
