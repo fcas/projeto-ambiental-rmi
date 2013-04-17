@@ -5,7 +5,9 @@
 package br.ufrn.GUI;
 
 import br.ufrn.services.AtualizaMonitor;
-import java.util.Calendar;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  *
@@ -838,10 +840,13 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
     @Override
     public void atualizaQuantidadeRuido(Integer area, String noise, Integer db) {
+        DateFormat df = new SimpleDateFormat("H");
+        String hora = df.format(new Date());
+        
         //noise = NOISE_ON, NOISE_OFF
         if (area.equals(1)) {
             if (noise.equals("NOISE_ON")) {
-                if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                if (Integer.parseInt(hora) > 22 && Integer.parseInt(hora) < 6) {
                     LabeSomA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                     LabeSomA1.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
@@ -852,7 +857,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             }
         } else if (area.equals(2)) {
             if (noise.equals("NOISE_ON")) {
-                if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                if (Integer.parseInt(hora) > 22 && Integer.parseInt(hora) < 6) {
                     LabeSomA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                     LabeSomA2.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
@@ -863,7 +868,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             }
         } else if (area.equals(3)) {
             if (noise.equals("NOISE_ON")) {
-                if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                if (Integer.parseInt(hora) > 22 && Integer.parseInt(hora) < 6) {
                     LabeSomA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                     LabeSomA3.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
@@ -874,7 +879,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             }
         } else if (area.equals(4)) {
             if (noise.equals("NOISE_ON")) {
-                if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                if (Integer.parseInt(hora) > 22 && Integer.parseInt(hora) < 6) {
                     LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                     LabeSomA4.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone

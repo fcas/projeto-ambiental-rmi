@@ -26,7 +26,7 @@ public class InformaService extends Service {
     public static final String ACID_RAIN = "acidRainMonitor";
     public static final String NOISE = "noiseMonitor";
     public static final String TEMPERATURE = "temperatureMonitor";
-    public static final String BEATIFUL_WEATHER = "beautifulWeatherMonitor";
+    public static final String BEAUTIFUL_WEATHER = "beautifulWeatherMonitor";
     public static final String IS_FIRE = "isFireMonitor";
     public static final String HOT_DRY = "hotDryMonitor";
     public static final String TRASH = "trashMonitor";
@@ -43,7 +43,7 @@ public class InformaService extends Service {
         publishs.put(ACID_RAIN, new Publish(ACID_RAIN));
         publishs.put(NOISE, new Publish(NOISE));
         publishs.put(TEMPERATURE, new Publish(TEMPERATURE));
-        publishs.put(BEATIFUL_WEATHER, new Publish(BEATIFUL_WEATHER));
+        publishs.put(BEAUTIFUL_WEATHER, new Publish(BEAUTIFUL_WEATHER));
         publishs.put(IS_FIRE, new Publish(IS_FIRE));
         publishs.put(HOT_DRY, new Publish(HOT_DRY));
         publishs.put(TRASH, new Publish(TRASH));
@@ -93,7 +93,7 @@ public class InformaService extends Service {
                                                     widget.getNonConstantAttributes(),
                                                     FunctionDescription.FUNCTION_SYNC));
                                    add(new FunctionDescription(
-                                                    BEATIFUL_WEATHER,
+                                                    BEAUTIFUL_WEATHER,
                                                     "mostra a temperatura aparente (sensação térmica).",
                                                     widget.getNonConstantAttributes(),
                                                     FunctionDescription.FUNCTION_SYNC));
@@ -139,7 +139,6 @@ public class InformaService extends Service {
                     if (functionName.equals(POLLUTION)) {
                         String context = serviceInput.getInput().getAttributeValue("area");
                         String valoresP[] = context.split(";");
-                       
 
                         if (valoresP[2].equals("TRAFEGO_ON")) {
                             cidade.atualizaFluxoVeiculos(Integer.parseInt(valoresP[0]), valoresP[2]);
@@ -237,7 +236,7 @@ public class InformaService extends Service {
                     }
                     
                     // beautiful Weather
-                    else if (functionName.equals(BEATIFUL_WEATHER)) {
+                    else if (functionName.equals(BEAUTIFUL_WEATHER)) {
                         String context = serviceInput.getInput().getAttributeValue("area");
                         String valoresT[] = context.split(";");
                         
@@ -248,18 +247,17 @@ public class InformaService extends Service {
                             cidade.atualizaClimaBom(Integer.parseInt(valoresT[0]), valoresT[2]);                       
                         }
                         //Publisher excession
-                        Publish p = publishs.get(BEATIFUL_WEATHER);
+                        Publish p = publishs.get(BEAUTIFUL_WEATHER);
                         if(p != null){
                             p.publicar(context);
                         }else{
-                            System.out.println("não existe publish associado a "+BEATIFUL_WEATHER);
+                            System.out.println("não existe publish associado a "+BEAUTIFUL_WEATHER);
                         }
                         
                     }
                     
                     //is fire?
                     else if (functionName.equals(IS_FIRE)) {
-                        System.out.println("===== chamou o service fire ========");
                         String context = serviceInput.getInput().getAttributeValue("area");
                         String valoresT[] = context.split(";");
                         

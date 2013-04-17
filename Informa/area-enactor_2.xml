@@ -81,8 +81,7 @@
 	<Reference name="trafficFlowOn">
 		<Query name="trafficFlowOn">
 			(AND
-				(GREATER indexPollution 250)
-				(GREATER vehicleFlow 200)
+				(GREATER vehicleFlow 60)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"pollutionMonitor;"+"TRAFEGO_ON"</Outcome>
@@ -106,7 +105,7 @@
         <Reference name="willRain">
 		<Query name="willRain">
 			(
-                            GREATER willRain 70
+                            GREATER willRain 75
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"willRainMonitor;"+"RAIN_ON"</Outcome>
@@ -132,7 +131,7 @@
 			(AND
 				(GREATER indexPollution 250)
 				(LESS windSpeed 20)
-				(GREATER willRain 70)
+				(GREATER willRain 75)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"acidRainMonitor;"+"AQUI"</Outcome>
@@ -146,7 +145,7 @@
 			(AND
 				(GREATER indexPollution 250)
 				(GREATER windSpeed 30)
-				(GREATER willRain 70)
+				(GREATER willRain 75)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"acidRainMonitor;"+"OUTRO;"+directionWind</Outcome>
@@ -171,7 +170,7 @@
 	<Reference name="noiseOn">
 		<Query name="noiseOn">
 			(
-				GREATER noise 55
+				GREATER noise 60
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"noiseMonitor;"+"NOISE_ON;"+noise</Outcome>

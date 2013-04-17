@@ -40,10 +40,6 @@ public class MonitoramentoArea implements AtualizarWidgetsRMI {
         areaIN.updateData("agentNearName", "agente 1");
         areaIN.updateData("agentDistance", -100);
     
-
-
-        
-
         //Enactors
         areaEnactor = EnactorXmlParser.createEnactor("Informa/area-enactor_" + area.toString() + ".xml");
 
