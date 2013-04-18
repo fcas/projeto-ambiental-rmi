@@ -170,7 +170,7 @@
 	<Reference name="noiseOn">
 		<Query name="noiseOn">
 			(
-				GREATER noise 60
+                            GREATER noise 60
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"noiseMonitor;"+"NOISE_ON;"+noise</Outcome>
@@ -218,6 +218,7 @@
                             (LESS temperature 30)
                             (GREATER humidity 60)
                             (GREATER windSpeed 20)
+                            (LESS willRain 60)
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"beautifulWeatherMonitor;"+"BEAUTIFUL_ON"</Outcome>
@@ -348,9 +349,8 @@
         
        	<Reference name="gatheringOn">
 		<Query name="gatheringOn">
-			(AND
-                            (EQUAL content 250)
-                            (EQUAL agentDistance 0)
+			(
+                            EQUAL agentDistance 0
 			)
 		</Query>
 		<Outcome outAttribute="area">area+";"+"trashGathering;"+"GATHERING_ON;"+agentNearName</Outcome>

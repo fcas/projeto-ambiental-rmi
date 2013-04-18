@@ -206,7 +206,12 @@ public class InformaService extends Service {
                         String context = serviceInput.getInput().getAttributeValue("area");
                         String valoresP[] = context.split(";");
                         
-                        cidade.atualizaQuantidadeRuido(Integer.parseInt(valoresP[0]),valoresP[2], Integer.parseInt(valoresP[3]));                  
+                        if (valoresP[2].equals("NOISE_ON")) {
+                            cidade.atualizaQuantidadeRuido(Integer.parseInt(valoresP[0]),valoresP[2], Integer.parseInt(valoresP[3]));                  
+                        }
+                        else if (valoresP[2].equals("NOISE_OFF")){
+                            cidade.atualizaQuantidadeRuido(Integer.parseInt(valoresP[0]),valoresP[2], Integer.parseInt(valoresP[3]));                  
+                        }
                         //Publisher excession
                         Publish p = publishs.get(NOISE);
                         if(p != null){

@@ -107,7 +107,7 @@ public class ConcreteAtualizarWidgets extends Register implements AtualizarWidge
         AtualizarWidgetsRMI atualizar = areaWdgets.get(area);
         
         if(atualizar != null){
-            atualizar.atualizarQuantidadeLixo(area, noise);
+            atualizar.atualizarQuantidadeRuido(area, noise);
         }else{
             System.out.println("não existe um pollution widget associado à area "+area);
         }
