@@ -15,6 +15,8 @@ import java.util.Scanner;
  */
 public class Publish {
     
+    
+    
     private Client client = Client.create();
     private static String URL_BASE_HUB = "http://127.0.0.1:8080/hub/";
     private String topico;
