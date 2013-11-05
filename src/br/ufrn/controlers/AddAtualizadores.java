@@ -9,7 +9,6 @@ package br.ufrn.controlers;
  * @author Jorge
  */
 public interface AddAtualizadores {
-    
-    public void AddAtualizadoresWidgets(Integer area, AtualizarWidgetsRMI atualizarWidgetsArea);
-    
+
+    public void AddAtualizadoresWidgets(Integer area, AttWidgetsRMI atualizarWidgetsArea);
 }

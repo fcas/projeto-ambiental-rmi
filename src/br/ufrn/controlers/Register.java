@@ -2,9 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package br.ufrn.controlers;
-
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -25,13 +23,12 @@ public abstract class Register extends UnicastRemoteObject {
         this.port = port;
     }
 
-
-    protected void register() throws RemoteException, MalformedURLException{
+    protected void register() throws RemoteException, MalformedURLException {
 
         java.rmi.registry.LocateRegistry.createRegistry(port);
         Naming.rebind(url, this);
 
-        System.out.println("Registro criado "+url);
+        System.out.println("Registro criado " + url);
     }
 
     public int getPort() {
@@ -49,7 +46,4 @@ public abstract class Register extends UnicastRemoteObject {
     public void setUrl(String url) {
         this.url = url;
     }
-
-
-
 }

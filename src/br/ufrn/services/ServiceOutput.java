@@ -12,7 +12,7 @@ import context.arch.widget.WidgetXmlParser;
  * @author Jorge
  */
 public class ServiceOutput {
-    
+
     private Widget informaOUT;
     private InformaService informaService;
 
@@ -22,9 +22,6 @@ public class ServiceOutput {
 
         informaService = new InformaService(informaOUT/*, monitor*/);
         informaOUT.addService(informaService);
-        
+
     }
-    
-    
-    
 }
