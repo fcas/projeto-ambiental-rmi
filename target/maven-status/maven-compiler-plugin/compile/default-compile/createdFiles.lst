@@ -1,0 +1,14 @@
+br/ufrn/controlers/AttWidgetsRMI.class
+br/ufrn/GUI/MonitorCidade.class
+br/ufrn/services/ServiceOutput.class
+br/ufrn/services/AtualizaMonitor.class
+br/ufrn/GUI/MonitorCidade$1.class
+br/ufrn/publish/Publish.class
+br/ufrn/services/InformaService$1.class
+br/ufrn/services/MonitoramentoArea.class
+br/ufrn/controlers/Register.class
+monitoramentoambiental/rmi/MonitoramentoAmbientalRMI.class
+br/ufrn/services/InformaService.class
+br/ufrn/controlers/ConcreteAttWidgets.class
+br/ufrn/controlers/InstanciaWidget.class
+br/ufrn/controlers/AddAtualizadores.class
