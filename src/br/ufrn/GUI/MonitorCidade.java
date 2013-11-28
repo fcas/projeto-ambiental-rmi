@@ -1162,11 +1162,11 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         if (area.equals(1)) {
             incendioArea1(isFire);
         } else if (area.equals(2)) {
-            incendioArea1(isFire);
+            incendioArea2(isFire);
         } else if (area.equals(3)) {
-            incendioArea1(isFire);
+            incendioArea3(isFire);
         } else if (area.equals(4)) {
-            incendioArea1(isFire);
+            incendioArea4(isFire);
         }
     }
 
