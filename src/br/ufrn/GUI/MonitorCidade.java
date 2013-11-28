@@ -25,7 +25,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         return MONITOR_CIDADE;
     }
 
-    private MonitorCidade() {
+    public MonitorCidade() {
         initComponents();
     }
     
