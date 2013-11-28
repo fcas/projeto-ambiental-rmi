@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 
+import br.ufrn.GUI.MonitorCidade;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,6 +16,7 @@ import static org.junit.Assert.*;
  * @author felipe
  */
 public class NewEmptyJUnitTest {
+    MonitorCidade m = new MonitorCidade();
     
     public NewEmptyJUnitTest() {
     }
@@ -37,7 +39,26 @@ public class NewEmptyJUnitTest {
     
     @Test
     public void testSubscriber(){
-        assertEquals("1", "1");
+        m.attNivelPol(1, "BOA");
+        m.attNivelPol(2, "BOA");
+        m.attNivelPol(3, "BOA");
+        m.attNivelPol(4, "BOA");
+        m.attNivelPol(1, "REGULAR");
+        m.attNivelPol(2, "REGULAR");
+        m.attNivelPol(3, "REGULAR");
+        m.attNivelPol(4, "REGULAR");
+        m.attNivelPol(1, "INADEQUADA");
+        m.attNivelPol(2, "INADEQUADA");
+        m.attNivelPol(3, "INADEQUADA");
+        m.attNivelPol(4, "INADEQUADA");
+        m.attNivelPol(1, "MA");
+        m.attNivelPol(2, "MA");
+        m.attNivelPol(3, "MA");
+        m.attNivelPol(4, "MA");
+        m.attNivelPol(1, "PESSIMA");
+        m.attNivelPol(2, "PESSIMA");
+        m.attNivelPol(3, "PESSIMA");
+        m.attNivelPol(4, "PESSIMA");
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
